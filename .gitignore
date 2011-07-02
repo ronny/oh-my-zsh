@@ -2,3 +2,10 @@ locals.zsh
 log/.zsh_history
 projects.zsh
 cache
+
+######################
+# ronny specific
+
+# symlinked to respective project's files, no need to track
+functions/_brew
+functions/_rvm
