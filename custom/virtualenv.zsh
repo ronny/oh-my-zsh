@@ -1,12 +1,15 @@
 # Python virtualenv.
-venvwrapper_path=`which virtualenvwrapper.sh`
-[[ -s "$venvwrapper_path" ]] && source "$venvwrapper_path"
-function has_virtualenv() {
-    if [ -e .venv ]; then
-        workon `cat .venv`
+# See also: $WORKON_HOME/postactivate for the RPROMPT
+function load_virtualenv_if_has_venv() {
+    if [[ -e .venv ]]; then
+        venvwrapper_path=`which virtualenvwrapper.sh`
+        if [[ -s "$venvwrapper_path" ]]; then
+            source "$venvwrapper_path"
+            workon `cat .venv`
+        fi
     fi
 }
-venv_cd () {
-    cd "$@" && has_virtualenv
+function venv_cd () {
+    cd "$@" && load_virtualenv_if_has_venv
 }
 alias cd='venv_cd'
