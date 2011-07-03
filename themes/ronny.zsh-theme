@@ -1,4 +1,5 @@
 PROMPT='%(!.%F{red}.%F{green}%n@%m)%F{normal}:%F{blue}%~%F{normal}$(vcs_prompt_info)%(!.%F{red}#%F{normal}.»)%F{normal} '
+RPROMPT='$(rvm_prompt_info)'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%F{yellow}["
 ZSH_THEME_GIT_PROMPT_SUFFIX="%F{normal}"
