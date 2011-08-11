@@ -3,4 +3,3 @@ alias cp='nocorrect cp'
 alias mv='nocorrect mv'
 
 alias macirb='macirb --simple-prompt'
-alias gitx='open -a GitX .'
