@@ -10,7 +10,5 @@ function load_virtualenv_if_has_venv() {
     workon `cat .venv`
   fi
 }
-function venv_cd () {
-  cd "$@" && load_virtualenv_if_has_venv
-}
-alias cd='venv_cd'
+
+chpwd_functions+=(load_virtualenv_if_has_venv)
