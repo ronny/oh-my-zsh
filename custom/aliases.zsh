@@ -9,4 +9,4 @@ alias be='nocorrect bundle exec'
 alias npm='nocorrect npm'
 alias pip='nocorrect pip'
 
-alias gitx='echo use sourcetree'
+alias gitx='echo Use stree instead.'
