@@ -1,6 +1,7 @@
 # Python virtualenv.
 # See also: $WORKON_HOME/postactivate for the RPROMPT
-venvwrapper_path="/usr/local/bin/virtualenvwrapper.sh"
+VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python"
+venvwrapper_path="/usr/local/share/python/virtualenvwrapper.sh"
 if [[ -s "$venvwrapper_path" ]]; then
   [[ -z $VIRTUALENVWRAPPER_LOG_DIR ]] && source "$venvwrapper_path"
 fi
