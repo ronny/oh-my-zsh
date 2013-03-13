@@ -1,4 +1,0 @@
-setopt auto_param_slash
-setopt no_auto_remove_slash
-setopt complete_aliases
-setopt no_beep
