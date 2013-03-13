@@ -30,10 +30,7 @@ if [[ -f "$wrapsource" ]]; then
         unset PROJECT_ROOT
     }
 
-    # New cd function that does the virtualenv magic
-    function cd {
-        builtin cd "$@" && workon_cwd
-    }
+    chpwd_functions+=(workon_cwd)
   fi
 else
   print "zsh virtualenvwrapper plugin: Cannot find virtualenvwrapper_lazy.sh. Please install with \`pip install virtualenvwrapper\`."
