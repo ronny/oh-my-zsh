@@ -1,4 +1,4 @@
-# get the name of the rvm ruby we are on
+# get the name of the ruby version
 function rvm_prompt_info() {
   [ -f $HOME/.rvm/bin/rvm-prompt ] || return
   local rvm_prompt
