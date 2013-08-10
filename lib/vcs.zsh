@@ -1,9 +1,9 @@
 function git_prompt_combined {
-  echo " (git) $(git_prompt_info)$(git_prompt_status)"
+  echo " $(git_prompt_info)$(git_prompt_status)"
 }
 
 function hg_prompt_combined {
-  echo " (hg) $(hg_prompt_info)"
+  echo " $(hg_prompt_info)"
 }
 
 # Based on http://stevelosh.com/blog/2010/02/my-extravagant-zsh-prompt/
